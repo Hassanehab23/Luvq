@@ -1,11 +1,345 @@
-<section class="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900 text-white px-8" data-aos="fade-up">
-  <div class="md:w-1/2 space-y-6">
-    <h1 class="text-5xl font-extrabold">Hello, I'm <span class="text-blue-400">Your Name</span></h1>
-    <p class="text-xl">Frontend Developer | Angular Specialist | UI/UX Enthusiast</p>
-    <a routerLink="/projects" class="inline-block bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold transition">View My Work</a>
+<body class="animate-slide-in-down duration-700 ease-in-out bg-amber-50">
+  
+  
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center bg-amber-50 px-4 pt-24 text-center overflow-hidden">
+
+  <!-- Background Image -->
+  <img
+    src="Hero.avif"
+    alt="Table"
+    class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-full object-cover opacity-70"
+  />
+
+  <!-- Welcome Text -->
+  <div class="relative z-10 max-w-3xl animate-fadeInUp">
+    <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+      Welcome to <span class="text-amber-600">Luvq Furniture</span>
+    </h1>
+    <p class="text-xl sm:text-xl md:text-2xl text-black mb-8">
+      Elegant designs crafted for your comfort.
+    </p>
   </div>
-  <div class="md:w-1/2 mt-8 md:mt-0">
-    <!-- ممكن تحط Lottie animation هنا أو صورة -->
-    <img src="assets/animations/developer.svg" alt="Developer Illustration" class="w-full max-w-md mx-auto" />
+
+  <!-- Chairs Animated One by One -->
+  <div class="absolute bottom-10 md:bottom-30 left-1/2 transform -translate-x-1/2 flex flex-wrap justify-center gap-3 sm:gap-4 z-10">
+    <img
+      src="Chair1.avif"
+      alt="Chair 1"
+      class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg animate-fadeInUp delay-1"
+    />
+    <img
+      src="Chair2.avif"
+      alt="Chair 2"
+      class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg animate-fadeInUp delay-2"
+    />
+    <img
+      src="Chair3.avif"
+      alt="Chair 3"
+      class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg animate-fadeInUp delay-3"
+    />
+    <img
+      src="Lighting.avif"
+      alt="Lights"
+      class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg animate-fadeInUp delay-4"
+    />
+    <img
+      src="Bed.avif"
+      alt="Bed"
+      class="w-16 h-16 md:w-20 md:h-20 rounded-full shadow-lg animate-fadeInUp delay-5"
+    />
   </div>
-</section>
+
+  </section>
+
+
+   <!-- Gallary For Desktop -->
+   <section class="hidden md:block px-2 my-10 gap-2">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Best Sellers</h2>
+            <div class="grid grid-cols-10">
+              <img src="pexels-houzlook-3797991.jpg" class="w-50 h-50 " alt="houzlook">
+            <img src="Chair1.avif" class="w-50 h-50 " alt="Chair1">
+            <img src="Chair2.avif" class="w-50 h-50 " alt="Chair2">
+            <img src="Chair3.avif" class="w-50 h-50 " alt="Chair3">
+            <img src="Bed.avif" class="w-50 h-50 " alt="Bed">
+            <img src="Lighting.avif" class="w-50 h-50 " alt="Lights">
+            <img src="dining room.avif" class="w-50 h-50 " alt="dining room">
+            <img src="Entryway.avif" class="w-50 h-50 " alt="Home Decor">
+            <img src="Home Decor.avif" class="w-50 h-50 " alt="Home Decor">
+            <img src="Kids' Furniture.avif" class="w-50 h-50 " alt="Kids' Furniture">
+            <img src="pexels-vika-glitter-392079-1648776.jpg" class="w-50 h-50 " alt="vika-glitter">
+            <img src="pexels-vika-glitter-392079-1648771.jpg" class="w-50 h-50 " alt="vika-glitter">
+            <img src="pexels-saviesa-home-1098995-2089698.jpg" class="w-50 h-50 " alt="saviesa-home">
+            <img src="Entryway.avif" class="w-50 h-50 " alt="Home Decor">
+            <img src="Chair3.avif" class="w-50 h-50 " alt="Chair3">
+            <img src="Bed.avif" class="w-50 h-50 " alt="Bed">
+            <img src="Entryway.avif" class="w-50 h-50 " alt="Home Decor">
+            <img src="Chair1.avif" class="w-50 h-50 " alt="Chair1">
+            <img src="Kids' Furniture.avif" class="w-50 h-50 " alt="Kids' Furniture">
+            <img src="Chair2.avif" class="w-50 h-50 " alt="Chair2">
+
+            </div>
+
+
+   </section>
+
+
+   <!--Gallary For Mobile -->
+   <section class="block md:hidden py-10"> 
+       <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center">Best Sellers</h2>
+       <div id="default-carousel" class="my-6 relative w-[95%] mx-auto" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-houzlook-3797991.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-vika-glitter-392079-1648776.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-dtanpt-1329711.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-fariphotography-1112598.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-fotoaibe-1669799.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 6 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-thisispav-29350087.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 7 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-thisispav-29350087.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 8-->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-thisispav-29350087.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 9 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-thisispav-29350087.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 10 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="pexels-thisispav-29350087.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7" data-carousel-slide-to="6"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 8" data-carousel-slide-to="7"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 9" data-carousel-slide-to="8"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 10" data-carousel-slide-to="9"></button>
+    </div>
+   </div>
+   </section>
+
+
+   <!-- About Us Desktop -->
+  <section class="py-10 text-center hidden md:block">
+  <div class="max-w-5xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Us</h2>
+    <p class="text-lg text-gray-600 mb-8">
+      At <span class="text-amber-600 font-semibold">Luvq Furniture</span>, we believe that your home should reflect your unique personality and style.
+      Our mission is to provide high-quality, stylish furniture at affordable prices. Whether you're furnishing a cozy apartment or decorating a spacious home,
+      our carefully curated collections are designed to inspire and impress.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Vision</h3>
+        <p class="text-gray-600">To become a leading name in furniture innovation and customer satisfaction worldwide.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Mission</h3>
+        <p class="text-gray-600">Delivering quality furniture that blends comfort, function, and design into every piece.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Values</h3>
+        <p class="text-gray-600">Integrity, craftsmanship, and customer-first service in every interaction.</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+   <!-- About Us Mobile -->
+    <section class="py-5 text-center block md:hidden">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">About Us</h2>
+   <div id="default-carousel" class="my-10 relative w-[95%] mx-auto" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-40 overflow-hidden rounded-lg">
+         <!-- Item 1 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Values</h3>
+        <p class="text-gray-600">Integrity, craftsmanship, and customer-first service in every interaction.</p>
+      </div>
+        <!-- Item 2 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Mission</h3>
+        <p class="text-gray-600">Delivering quality furniture that blends comfort, function, and design into every piece.</p>
+      </div>
+        <!-- Item 3 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold text-gray-800 mb-2">Our Vision</h3>
+        <p class="text-gray-600">To become a leading name in furniture innovation and customer satisfaction worldwide.</p>
+      </div>      
+
+
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+   </div>
+    </section>
+
+
+  <!-- Why Us For Desktop -->
+  <section class="hidden md:block py-20 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">Why Choose Luvq?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div class="p-6 bg-white shadow-xl rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+        <p>Built with care and the finest materials to last for years.</p>
+      </div>
+      <div class="p-6 bg-white shadow-xl rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Elegant Designs</h3>
+        <p>Timeless, modern styles that match any space.</p>
+      </div>
+      <div class="p-6 bg-white shadow-xl rounded-lg">
+        <h3 class="text-xl font-semibold mb-2">Affordable Prices</h3>
+        <p>Luxury doesn’t have to be expensive. We keep it fair.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!--Why Us For Mobile -->
+    <section class="py-5 text-center block md:hidden">
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">Why Choose Luvq?</h2>
+   <div id="default-carousel" class="my-10 relative w-[95%] mx-auto" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-30 overflow-hidden rounded-lg">
+         <!-- Item 1 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold mb-2">Premium Quality</h3>
+        <p>Built with care and the finest materials to last for years.</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold mb-2">Elegant Designs</h3>
+        <p>Timeless, modern styles that match any space.</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="p-6 bg-gray-300 shadow-xl hidden duration-700 ease-in-out" data-carousel-item>
+        <h3 class="text-xl font-semibold mb-2">Affordable Prices</h3>
+        <p>Luxury doesn’t have to be expensive. We keep it fair.</p>
+      </div>       
+
+
+
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+    </div>
+   </div>
+   </section>
+
+   
+     <!-- Featured Categories Section -->
+  <section class="py-5">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Featured Categories</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Category 1 -->
+      <div class="overflow-hidden rounded-xl shadow-lg group">
+        <img src="living room.avif" alt="Living Room" class="w-full h-60 object-cover transform group-hover:scale-105 transition duration-500">
+        <div class="bg-amber-100 p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Living Rooms</h3>
+          <p class="text-gray-600 text-sm mt-2">Comfort and style in one perfect space.</p>
+        </div>
+      </div>
+
+      <!-- Category 2 -->
+      <div class="overflow-hidden rounded-xl shadow-lg group">
+        <img src="bed room.avif" alt="Bedroom" class="w-full h-60 object-cover transform group-hover:scale-105 transition duration-500">
+        <div class="bg-amber-100 p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Bedrooms</h3>
+          <p class="text-gray-600 text-sm mt-2">Peaceful retreats for restful nights.</p>
+        </div>
+      </div>
+
+      <!-- Category 3 -->
+      <div class="overflow-hidden rounded-xl shadow-lg group">
+        <img src="dining room.avif" alt="Dining Room" class="w-full h-60 object-cover transform group-hover:scale-105 transition duration-500">
+        <div class="bg-amber-100 p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Dining Rooms</h3>
+          <p class="text-gray-600 text-sm mt-2">Elegant settings for every meal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+   
+          <!-- Testimonials -->
+    <div class="w-[90%] mx-auto py-8 animate-fade-up">
+      <h3 class="text-3xl font-semibold text-amber-600 text-center mb-12">What Our Customers Say</h3>
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <p class="text-gray-700 italic">"Absolutely in love with our new living room set. Beautiful craftsmanship and excellent delivery service. Highly recommended!"</p>
+          <h4 class="text-sm font-bold mt-4 text-amber-600">– Amanda R.</h4>
+        </div>
+
+        <div class="bg-gray-50 p-6 rounded-xl shadow">
+          <p class="text-gray-700 italic">"Professional service, sustainable designs, and affordable luxury. Luvq Furniture has transformed our space."</p>
+          <h4 class="text-sm font-bold mt-4 text-amber-600">– Daniel M.</h4>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+      <!-- Call to Action -->
+  <section class="py-10 text-amber-900 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Style Your Space?</h2>
+    <p class="text-lg mb-8">Explore our collection of modern furniture and décor.</p>
+    <a routerLink="/Categories" class="bg-amber-600 hover:bg-amber-700 py-3 px-6 rounded-full text-white shadow-md transition">Browse Collections</a>
+  </section>
+
+
+
+
+
+
+
+
+
+
+              </body>

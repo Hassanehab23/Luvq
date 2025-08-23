@@ -1,67 +1,10 @@
-<nav class="bg-amber-100 border-gray-200 dark:bg-amber-50 animate-slide-in-down duration-700 ease-in-out" dir="{{ currentLang === 'ar' ? 'rtl' : 'ltr' }}"
-  [ngClass]="{
-    'opacity-100 translate-y-0': showNavbar,
-    'opacity-0 -translate-y-full': !showNavbar
-  }">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2 md:p-4">
-
-    <!-- Logo -->
-    <img src="Logo.png" alt="Logo" class="rounded-full h-16 animate-fade-in duration-700 delay-100">
-
-    <!-- Mobile menu button -->
-    <div class="flex md:order-2 animate-fade-in duration-700 delay-200">
-      <button data-collapse-toggle="navbar-cta" type="button"
-        class="cursor-pointer inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-        aria-controls="navbar-cta" aria-expanded="false">
-        <span class="sr-only">Open main menu</span>
-        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-          viewBox="0 0 17 14">
-          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- Main menu -->
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 animate-fade-in duration-700 delay-300" id="navbar-cta">
-      <ul
-        class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-amber-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 text-gray-700  dark:text-amber-400 md:bg-amber-100 dark:bg-amber-50 md:dark:bg-amber-50 dark:border-gray-700"
-        [ngClass]="{ 'space-x-reverse rtl': currentLang === 'ar' }">
-
-        <!-- روابط الموقع -->
-        <li class="transition duration-500 hover:scale-105"><a routerLink="/Home" routerLinkActive="text-amber-600" class="hover:text-amber-600">{{ currentLang === 'ar' ? 'الصفحة الرئيسية' : 'Home' }}</a></li>
-
-        <!-- Dropdown -->
-        <li class="relative group transition duration-500 hover:scale-105 z-90">
-          <button class="flex items-center gap-1 hover:text-amber-600">
-            <span routerLink="/Categories" routerLinkActive="text-amber-600" class="cursor-pointer hover:text-amber-600">
-              {{ currentLang === 'ar' ? 'اصناف' : 'Categories' }}
-            </span>
-            <i class="fas fa-chevron-down text-xs"></i>
-          </button>
-          <ul
-            class="absolute top-full left-0 bg-white shadow-lg rounded-lg p-1 text-gray-500 w-56 hidden group-hover:block z-50 text-sm animate-fade-in">
-            <li><a routerLink="/Living Room" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'غرف المعيشة ' : 'Living Room' }}</a></li>
-            <li><a routerLink="/Bed Room" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'غرف النوم ' : 'Bed Room' }}</a></li>
-            <li><a routerLink="/Dining Room" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'غرف تناول الطعام' : 'Dining Room' }}</a></li>
-            <li><a routerLink="/Office Furniture" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? ' أثاث المكاتب' : 'Office Furniture' }}</a></li>
-            <li><a routerLink="/Kid's Furniture" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? ' أثاث الاطفال' : "Kid's Furniture" }}</a></li>
-            <li><a routerLink="/Outdoor Furniture" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'أثاث خارجي' : 'Outdoor Furniture' }}</a></li>
-            <li><a routerLink="/Storage & Organization" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'التنظيم والتخزين' : 'Storage & Organization' }}</a></li>
-            <li><a routerLink="/Lighting" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'إضاءة ' : 'Lighting' }}</a></li>
-            <li><a routerLink="/Home Decor" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? '  الديكور' : 'Home Decor' }}</a></li>
-            <li><a routerLink="/Entryway" class="block px-4 py-2 hover:bg-gray-100 hover:text-amber-600">{{ currentLang === 'ar' ? 'مداخل' : 'Entryway' }}</a></li>
-          </ul>
-        </li>
-
-        <!-- Static Links -->
-        <li class="transition duration-500 hover:scale-105"><a routerLink="/Blogs" routerLinkActive="text-amber-600" class="hover:text-amber-600">{{ currentLang === 'ar' ? 'المدونة' : 'Blogs' }}</a></li>
-        <li class="transition duration-500 hover:scale-105"><a routerLink="/About" routerLinkActive="text-amber-600" class="hover:text-amber-600">{{ currentLang === 'ar' ? 'من نحن' : 'About Us' }}</a></li>
-        <li class="transition duration-500 hover:scale-105"><a routerLink="/Gallary" routerLinkActive="text-amber-600" class="hover:text-amber-600">{{ currentLang === 'ar' ? 'المعرض' : 'Gallary' }}</a></li>
-        <li class="transition duration-500 hover:scale-105"><a href="https://wa.me/2001127739271" target="_blank" class="hover:text-amber-600">{{ currentLang === 'ar' ? 'تواصل معنا' : 'CONTACT US' }}</a></li>
-
-        
-      </ul>
-    </div>
-  </div>
+<nav class="bg-gray-900 text-white flex justify-between items-center px-8 py-4 sticky top-0 z-50 shadow-lg">
+  <div class="text-2xl font-bold">MyPortfolio</div>
+  <ul class="flex space-x-8 text-lg">
+    <li><a routerLink="/" routerLinkActive="text-blue-400" [routerLinkActiveOptions]="{exact:true}" class="hover:text-blue-400 transition">Home</a></li>
+    <li><a routerLink="/about" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">About</a></li>
+    <li><a routerLink="/projects" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">Projects</a></li>
+    <li><a routerLink="/blog" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">Blog</a></li>
+    <li><a routerLink="/contact" routerLinkActive="text-blue-400" class="hover:text-blue-400 transition">Contact</a></li>
+  </ul>
 </nav>
